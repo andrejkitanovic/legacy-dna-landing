@@ -1,1 +1,21 @@
-[ ]
+[ {
+  "id" : "1569f00c-d132-c505-b899-bbc3aa6835ab",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "9d89855d-65d8-21ab-453a-4d994e0e6436",
+  "name" : "event_start_date",
+  "display_width" : null,
+  "label" : "Event Start Date",
+  "required" : false,
+  "locked" : false,
+  "step" : 30,
+  "type" : "datetime"
+} ]

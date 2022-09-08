@@ -1,0 +1,120 @@
+.switch {
+  max-width: 920px;
+  margin: 0 auto 30px;
+
+  &__title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 54px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 10px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 18px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    transition: color 0.2s ease("fluid"), background-color 0.2s ease("fluid");
+    border-top: 3px solid transparent;
+
+    cursor: pointer;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: var(--secondary-color);
+      border-top-color: var(--primary-color);
+    }
+  }
+
+  &__content {
+    min-height: 300px;
+    padding: 0 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: var(--secondary-color);
+    box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__description {
+    display: none;
+    font-weight: normal;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: breakpoint(lg)) {
+  .switch {
+    position: relative;
+    &__row {
+      display: none;
+      text-align: left;
+      position: relative;
+      padding: 15px 13px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+        border: 5px solid transparent;
+        border-top-color: #fff;
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+
+    &__rows-dropdown {
+      display: none !important;
+
+      &.open {
+        display: block !important;
+      }
+    }
+
+    &__row-dropdown {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 13px;
+      font-weight: bold;
+      width: 100%;
+      font-size: 18px;
+      text-align: left;
+      transition: color 0.2s ease("fluid"), background-color 0.2s ease("fluid");
+      border-top: 2px solid #ccc;
+      color: #fff;
+      background-color: var(--secondary-color);
+      cursor: pointer;
+
+      &:last-child {
+        border-bottom: 2px solid #ccc;
+      }
+
+      &.active {
+        background-color: #fff;
+        color: var(--primary-color);
+      }
+    }
+
+    &__content {
+      min-height: auto;
+      padding: 30px;
+    }
+  }
+}

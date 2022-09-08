@@ -1,1 +1,9 @@
-[ ]
+[ {
+  "id" : "cd223c21-5aa7-184a-11a8-a598e49d6740",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]

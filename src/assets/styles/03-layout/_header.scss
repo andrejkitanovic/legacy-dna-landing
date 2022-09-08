@@ -1,5 +1,19 @@
 .header {
   padding: 5px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  color: #fff;
+  background-color: #fff;
+  width: 100%;
+
+  &-fixed {
+    @extend .header;
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease(fluid);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+
+    &.active {
+      transform: translateY(0%);
+    }
+  }
 }

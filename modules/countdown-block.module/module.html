@@ -2,28 +2,29 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="countdown__title h3">
-          The Health Innovators Brain Trust Event is on September 14 at 12:30 PM
-          EDT and begins in:
-        </h2>
+        <h2 class="countdown__title h3">{{ module.title }}</h2>
       </div>
     </div>
-    <div class="countdown__main">
+    <div
+      id="countdown"
+      class="countdown__main"
+      aria-date="{{ module.event_start_date }}"
+    >
       <div class="row">
-        <div class="col-3">
-          <div class="countdown__time h2">19</div>
+        <div class="col-6 col-sm-3">
+          <div class="countdown__time h2" id="days">-</div>
           <div class="countdown__label">Day</div>
         </div>
-        <div class="col-3">
-          <div class="countdown__time h2">18</div>
+        <div class="col-6 col-sm-3">
+          <div class="countdown__time h2" id="hours">-</div>
           <div class="countdown__label">Hours</div>
         </div>
-        <div class="col-3">
-          <div class="countdown__time h2">3</div>
+        <div class="col-6 col-sm-3">
+          <div class="countdown__time h2" id="minutes">-</div>
           <div class="countdown__label">Minutes</div>
         </div>
-        <div class="col-3">
-          <div class="countdown__time h2">4</div>
+        <div class="col-6 col-sm-3">
+          <div class="countdown__time h2" id="seconds">-</div>
           <div class="countdown__label">Seconds</div>
         </div>
       </div>

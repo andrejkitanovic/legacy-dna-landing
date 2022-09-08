@@ -1,12 +1,32 @@
 <section class="three-columns">
   <div class="container">
     <div class="row">
-      <div class="col-4">
+      {% for item in module.item %}
+      <div class="col-12 col-lg-4">
         <div class="three-columns__item">
-          <div class="three-columns__icon"></div>
-          <div class="three-columns__title h4">GROW AND SCALE TOGETHER</div>
+          <div class="three-columns__item-inner">
+            <div class="three-columns__item-front">
+              {% if item.item_image.src %}
+              <div class="three-columns__icon">
+                <img
+                  src="{{ item.item_image.src }}"
+                  alt="{{ item.item_title }}"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              {% endif %}
+              <div class="three-columns__title h4">{{ item.item_title }}</div>
+            </div>
+            <div class="three-columns__item-back">
+              <div class="three-columns__description">
+                {{ item.item_description }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>

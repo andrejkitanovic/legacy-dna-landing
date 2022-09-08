@@ -26,3 +26,11 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: breakpoint(sm)) {
+  .countdown {
+    &__label {
+      margin-bottom: 30px;
+    }
+  }
+}

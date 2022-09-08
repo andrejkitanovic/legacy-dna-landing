@@ -1,17 +1,41 @@
 <section class="switch">
   <div class="container">
-    <div class="switch__rows">
-      <div class="row">
-        <div class="col-12">
-          <div class="switch__row"></div>
+    <div class="row">
+      <div class="col-12">
+        <div class="switch__title h3">{{ module.title }}</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="switch__rows d-flex">
+          {% for item in module.row %}
+          <div class="switch__row {% if loop.first %}active{% endif %}">
+            {{ loop.index }}. {{ item.row_title }}
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="switch__rows-dropdown d-block d-sm-none">
+          {% for item in module.row %}
+          <div
+            class="switch__row-dropdown {% if loop.first %}active{% endif %}"
+          >
+            {{ loop.index }}. {{ item.row_title }}
+          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12">
-        <div class="switch__content">
-          <div class="siwch__description"></div>
+        <div class="switch__content h4">
+          {% for item in module.row %}
+          <div class="switch__description {% if loop.first %}active{% endif %}">
+            {{ item.row_description }}
+          </div>
+          {% endfor %}
         </div>
       </div>
     </div>

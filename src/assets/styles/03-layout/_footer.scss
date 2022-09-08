@@ -17,3 +17,18 @@
     margin-right: 8px;
   }
 }
+
+@media screen and (max-width: breakpoint(md)) {
+  .footer {
+    text-align: center;
+
+    &__links {
+      flex-direction: column;
+    }
+
+    &__link {
+      margin-right: 0;
+      margin-bottom: 3px;
+    }
+  }
+}

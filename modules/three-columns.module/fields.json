@@ -1,1 +1,65 @@
-[ ]
+[ {
+  "id" : "c7ec8f91-25ab-8958-4539-e619d5a5f77a",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 3,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "9d7b6d9a-9a4f-604d-ebac-e5e7e98aa310",
+    "name" : "item_image",
+    "display_width" : null,
+    "label" : "Item Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "c19b5344-9cab-2bf1-b3d9-4125f4f74e5c",
+    "name" : "item_title",
+    "display_width" : null,
+    "label" : "Item Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "2c86bcc6-553b-4626-e71d-3711d86f1327",
+    "name" : "item_description",
+    "display_width" : null,
+    "label" : "Item Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "item_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+} ]

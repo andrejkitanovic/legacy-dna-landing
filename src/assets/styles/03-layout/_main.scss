@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box !important;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -10,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.4;
   @include box-sizing(border-box);
 }
 
