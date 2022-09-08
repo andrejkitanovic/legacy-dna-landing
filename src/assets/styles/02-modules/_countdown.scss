@@ -1,0 +1,28 @@
+.countdown {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #fff;
+  max-width: 820px;
+  margin: -70px auto 70px;
+
+  &__title {
+    color: var(--primary-color);
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  &__main {
+    max-width: 760px;
+    margin: 64px auto 0;
+  }
+
+  &__time {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  &__label {
+    text-align: center;
+  }
+}

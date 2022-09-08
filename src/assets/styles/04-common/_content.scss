@@ -1,0 +1,107 @@
+body {
+  color: #00293a;
+  //     margin: 20px 0;
+}
+
+h1,
+.h1 {
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+h2,
+.h2 {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.p1 {
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+.p2 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p3 {
+  font-size: 12px;
+  line-height: 27px;
+}
+
+.eyebrow2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.eyebrow3 {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button {
+  // display: inline-block;
+
+  border-radius: 7px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 20px 25px;
+  text-transform: none;
+
+  &-secondary {
+    @extend .button;
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+}
+
+b,
+strong {
+}
+
+p {
+}
+
+a {
+  color: #4098d3;
+  text-decoration: none;
+}

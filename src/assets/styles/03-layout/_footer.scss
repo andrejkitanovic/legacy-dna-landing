@@ -1,0 +1,19 @@
+.footer {
+  padding: 25px 0 50px;
+  background-color: #383638;
+  color: #fff;
+
+  &__logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 8px;
+  }
+
+  &__links {
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    color: var(--primary-color);
+    margin-right: 8px;
+  }
+}

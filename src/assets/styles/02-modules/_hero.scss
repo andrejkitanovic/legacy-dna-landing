@@ -1,0 +1,15 @@
+.hero {
+  padding: 160px 0;
+  text-align: center;
+  background: no-repeat center center / cover;
+  background-color: var(--primary-color);
+  color: #fff;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    margin-bottom: 60px;
+  }
+}

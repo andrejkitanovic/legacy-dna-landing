@@ -1,0 +1,10 @@
+.rich-text {
+  padding: 15px 0;
+  text-align: center;
+
+  &__text {
+    font-weight: normal;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}

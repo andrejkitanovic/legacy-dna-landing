@@ -1,0 +1,23 @@
+<!--
+  templateType: global_partial
+  label: Footer
+-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer__logo">{% logo "my_logo" width="200" %}</div>
+        <div class="footer__links d-flex">
+          <a href="#!" class="footer__link">Terms of Use</a>
+          <a href="#!" class="footer__link">Privacy Policy</a>
+          <a href="#!" class="footer__link"
+            >Google API Limited Use Disclosure</a
+          >
+        </div>
+        <div class="footer__copyright">
+          © {{ year }} {{ site_settings.company_name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

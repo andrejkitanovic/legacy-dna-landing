@@ -1,0 +1,15 @@
+.three-columns {
+  padding-bottom: 60px;
+
+  &__item {
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  &__title {
+    color: var(--secondary-color);
+    font-weight: normal;
+  }
+}
